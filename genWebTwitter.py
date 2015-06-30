@@ -18,7 +18,7 @@ def generate():
     if inputFile == None:
         return None
     posts = json.load(inputFile)
-    htmlOut = openFile("web/twitter.html","w")
+    htmlOut = openFile("/var/www/twitter.html","w")
 
     htmlOut.write("<HTML><HEAD><TITLE>.:: Twitter Stalkline ::.</TITLE>")
     htmlOut.write("<style>body {background-color:#c0deed} p {font-family:arial} h3 {color:#0184b4} </style></HEAD>")

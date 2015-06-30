@@ -18,7 +18,7 @@ def generate():
     if inputFile == None:
         return None
     posts = json.load(inputFile)
-    htmlOut = openFile("web/facebook.html","w")
+    htmlOut = openFile("/var/www/facebook.html","w")
 
     htmlOut.write("<HTML><HEAD><TITLE>.:: Facebook Stalkline ::.</TITLE>")
     htmlOut.write("<style>body {background-color:#e9eaed} p {font-family:arial} h3 {color:#FFFFFF} </style></HEAD>")
